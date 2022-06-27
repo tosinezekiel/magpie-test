@@ -35,6 +35,7 @@ Please also send us your `output.json`.
 * Device capacity should be captured in MB for all products (not GB)
 * The final output should be an array of products, outputted to output.json
 * Don’t forget the pagination!
+* You will be assessed both on successfully generating the correct output data in output.json, and also on the quality of your code.
 
 ### Useful Resources
 * https://symfony.com/doc/current/components/dom_crawler.html
