@@ -4,40 +4,35 @@ namespace App;
 
 class Product
 {
-    private string $title;
-    private float $price;
-    private string $imageUrl;
-    private int $capacityMB;
-    private string $colour;
-    private string $availabilityText;
-    private bool $isAvailable;
-    private string $shippingText;
-    private string $shippingDate;
+    public string $title;
+    public float $price;
+    public string $imageUrl;
+    public int $capacityMB;
+    public string $color;
+    public string $availabilityText;
+    public bool $isAvailable;
+    public ?string $shippingText;
+    public ?string $shippingDate;
 
     public function __construct(
         string $title,
         float $price,
         string $imageUrl,
         int $capacityMB,
-        string $colour,
+        string $color,
         string $availabilityText,
         bool $isAvailable,
-        string $shippingText,
-        string $shippingDate
+        ?string $shippingText,
+        ?string $shippingDate
     ) {
         $this->title = $title;
         $this->price = $price;
         $this->imageUrl = $imageUrl;
         $this->capacityMB = $capacityMB;
-        $this->colour = $colour;
+        $this->color = $color;
         $this->availabilityText = $availabilityText;
         $this->isAvailable = $isAvailable;
         $this->shippingText = $shippingText;
         $this->shippingDate = $shippingDate;
-    }
-
-    public function getTitle() : string
-    {
-        return $this->title;
     }
 }
